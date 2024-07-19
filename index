@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>R'Digital Arts</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+        <div  id="main1-div">
+        <div id="logo-div" class="clearfix">
+        <img src="C:\Users\RyanC\Downloads\R'Digital.png" width="90" height="90"></a>
+        </div>
+        <div id="navMain-div">
+            <div id="nav-div">
+                <b><p class="h-color">Home</p></b>
+            </div>
+            <div id="nav-div">
+                <b><p class="h-color">About Us</p></b>
+            </div>
+            <div id="nav-div">
+                <b><p class="h-color">Services</p></b>
+            </div>
+            <div id="nav-div">
+                <b><p class="h-color">Contacts</p></b>
+            </div>
+            <div id="nav-div">
+                <b><p class="h-color">Tutorials</p></b></div>
+            </div>
+        </div>
+    <div id="wrapper-div">
+        <div id="headerbanner-div">
+            <img src="C:\Users\202312420\Downloads\ilovepdf_pages-to-jpg\DelRosario_Tech2_pages-to-jpg-0001.jpgC:\Users\RyanC\OneDrive\Documents\character.jpg" width="80%" height="80%">
+        </div>
+        <div id="main-div" class="clearfix">
+            <div id="sidebar-div">
+                <input type="text" placeholder="Search.."><br><br>
+                <img src="C:\Users\RyanC\Downloads\dynamic.jpg" width="240px" height="220px"><br>Artist's Works
+
+            </div>
+
+            <div id="bodyarea-div">
+                <p>Welcome to R'Digital Arts, this website is where I put all my digital art work and share inspiration and knowledge about difital art to you guys!</p><br>
+                <p>I'll post here tutorials, and timelapse while doing my arts. Hope you all like it!</p><br>
+            </div>
+        </div>
+        <div id="footerMain-div">
+            <div id="footerAddress-div">
+                <p>My workplace: Bonifacio Global City, Taguig City, Metro Manila.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

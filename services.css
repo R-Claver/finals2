@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #b3d9ff, #87ceeb);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h-color {
+    color: rgb(0, 162, 255);
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.h-color:hover {
+    color: #6c8ed8;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+#main1-div {
+    width: 100%;
+    min-height: 60px;
+    line-height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(14, 14, 85);
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#main1-div.sticky {
+    background-color: rgba(14, 14, 85, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo-div {
+    padding-left: 5%;
+}
+
+#navMain-div {
+    display: flex;
+    gap: 20px;
+    font-size: medium;
+}
+
+.nav-div {
+    text-align: center;
+    position: relative;
+}
+
+.nav-div a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-div a:hover {
+    background-color: rgba(0, 162, 255, 0.1);
+    color: #6c8ed8;
+}
+
+.nav-div a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 162, 255);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-div a:hover::before {
+    transform: scaleX(1);
+}
+
+#headerbanner-div {
+    width: 100%;
+    text-align: center;
+    min-height: 100px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.responsive-img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-box {
+    flex: 1;
+    max-width: 48%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #b3d9ff; /* Light blue border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.content-box:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+}
+
+.content-image {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+    text-align: center;
+}
+
+.content-text h2 {
+    font-size: 1.75em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.content-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+#footerMain-div {
+    width: 100%;
+    min-height: 50px;
+    background-color: #FFBF00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#footerAddress-div {
+    border-radius: 25px;
+    width: 75%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 255, 242, 0.582);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#footerAddress-div:hover {
+    background-color: rgba(0, 255, 242, 0.8);
+    transform: scale(1.02);
+}
+
+#wrapper-div {
+    width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    #main1-div {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #navMain-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #main-div {
+        flex-direction: column;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+#logo-div img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-top: 10%
+}
